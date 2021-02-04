@@ -15,7 +15,7 @@ class BookModel:
         return db.insert(schema, self.table, book_list)
     
     def update(self, book_list):
-        return db.update(schema, self.table, params)
+        return db.update(schema, self.table, book_list)
 
     def delete(self, id):
         return db.delete(schema, self.table, [id])
